@@ -1,7 +1,7 @@
 local mapKey = require("utils.keyMapper").mapKey
 
 -- Neotree toggle
-mapKey("<leader>e", ":Neotree toggle<cr>")
+mapKey("<leader>1", ":Neotree toggle<cr>")
 
 -- pane navigation
 mapKey("<C-h>", "<C-w>h") -- Left
@@ -18,4 +18,4 @@ mapKey(">", ">gv", "v")
 
 -- clipboard
 mapKey("<C-c>", '"+y', "v")
-mapKey("<leader>Y", 'gg"+yG', "n")
+mapKey("<leader>Y", 'gg"+yG')
