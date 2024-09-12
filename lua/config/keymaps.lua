@@ -47,3 +47,6 @@ end)
 mapKey("<F7>", function()
 	require("dap").step_into()
 end)
+
+-- code runner
+mapKey("<leader>r", ":RunCode<CR>")
