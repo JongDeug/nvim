@@ -15,6 +15,11 @@ return {
 					local file = vim.fn.expand("%:p")
 					return string.format('node "%s"', file)
 				end,
+
+				typescript = function()
+					local file = vim.fn.expand("%:p")
+					return string.format('ts-node "%s"', file)
+				end,
 			},
 		})
 	end,
