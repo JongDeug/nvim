@@ -28,12 +28,25 @@ return {
 						program = "${file}",
 						cwd = "${workspaceFolder}",
 					},
+					-- {
+					-- 	type = "pwa-node",
+					-- 	request = "attach",
+					-- 	name = "Attach",
+					-- 	processId = require("dap.utils").pick_process,
+					-- 	cwd = "${workspaceFolder}",
+					-- },
 					{
 						type = "pwa-node",
-						request = "attach",
-						name = "Attach",
-						processId = require("dap.utils").pick_process,
+						request = "launch",
+						name = "Debug Nest Framework",
+						runtimeExecutable = "pnpm",
+						runtimeArgs = { "run", "start:debug", "--", "--inspect-brk" },
 						cwd = "${workspaceFolder}",
+						autoAttachChildProcesses = true,
+						restart = true,
+						sourceMaps = true,
+						stopOnEntry = false,
+						console = "integratedTerminal",
 					},
 				}
 			end
