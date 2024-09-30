@@ -73,10 +73,10 @@ return {
 			end
 		end,
 	},
-
-	{
-		"microsoft/vscode-js-debug",
-		build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-		lazy = true,
-	},
+	-- path 수동 설치: ~/.local/share/nvim/lazy/vscode-js-debug
+	-- {
+	-- 	"microsoft/vscode-js-debug",
+	-- 	build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+	-- 	lazy = true,
+	-- },
 }
