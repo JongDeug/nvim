@@ -24,6 +24,7 @@ mapKey("<leader>Y", 'gg"+yG')
 mapKey("K", vim.lsp.buf.hover)
 mapKey("gd", vim.lsp.buf.definition)
 mapKey("<leader>ca", vim.lsp.buf.code_action)
+mapKey("<leader>e", vim.diagnostic.open_float)
 mapKey("<C-s>", ":w<CR>")
 
 -- Debug
